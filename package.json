@@ -1,0 +1,36 @@
+{
+  "name": "sdk-node",
+  "version": "1.0.0",
+  "description": "SDK for Node.js to use on IBM Cloud",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edicury/sdk-node.js.git"
+  },
+  "keywords": [
+    "sdk",
+    "nodejs",
+    "ibmcloud",
+    "ibm"
+  ],
+  "author": "Edison Cury Neto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edicury/sdk-node.js/issues"
+  },
+  "homepage": "https://github.com/edicury/sdk-node.js#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "cross-spawn": "^5.1.0",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "log.pets": "0.0.23",
+    "watson-developer-cloud": "^3.0.3",
+    "yargs": "^10.0.3"
+  }
+}

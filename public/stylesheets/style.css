@@ -1,0 +1,602 @@
+/* Utils */
+
+/* :root {
+    --main-color: #008654;
+} */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #F5F7FA !important;
+    overflow-x: hidden;
+}
+
+.margin0 {
+    margin: 0px !important;
+}
+
+.padding0 {
+    padding: 0px !important;
+}
+
+.margin0ANDpadding0 {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.height100 {
+    height: 100%;
+}
+
+.height90 {
+    height: 90% !important;
+}
+
+.displaynone {
+    display: none !important;
+}
+
+.redCarbon {
+    background-color: #e71d32 !important;
+}
+
+.yellowCarbon {
+    background-color: #efc100 !important;
+}
+
+.greenCarbon {
+    background-color: #5aa700 !important;
+}
+
+
+/* Utils */
+
+
+/*NAV*/
+
+.nav {
+    background-color: #0F212E !important;
+    height: 6% !important;
+    margin-bottom: 0 !important;
+}
+
+.nav2 {
+    background-color: #F2F2F2 !important;
+    height: 7.6% !important;
+    margin-bottom: 0 !important;
+}
+
+.nav3 {
+    background-color: #ffff !important;
+    height: 9.5% !important;
+    margin-bottom: 0 !important;
+}
+
+.logo {
+    height: 100% !important;
+    margin-left: 0% !important;
+    padding: 0% !important;
+}
+
+.titulo {
+    margin-left: 5%;
+}
+
+.colnav2 {
+    height: 100% !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+}
+
+
+/*NAV*/
+
+
+/*MENU*/
+
+@media only screen and (max-width: 600px) {
+    .burguerHolder {
+        height: 100% !important;
+        cursor: pointer;
+    }
+}
+
+
+/* max-width 600px, mobile-only styles, use when QAing mobile issues */
+
+@media only screen and (min-width: 601px) {
+    .burguerHolder {
+        height: 100% !important;
+        cursor: pointer;
+    }
+}
+
+
+/* min-width 601px and max-width 1024px, use when QAing tablet-only issues */
+
+.flex {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    text-decoration-color: #fff;
+    margin: 0px;
+    height: 200% !important;
+}
+
+
+/* .side-nav{
+    top: 23%;    
+} */
+
+.goright {
+    right: 0px !important;
+}
+
+.help-text {
+    text-align: center;
+    text-decoration-color: #fff;
+}
+
+.overlay {
+    z-index: 5;
+    background: rgb(0, 0, 0, 0.65) !important;
+    position: fixed !important;
+    left: 0 !important;
+    top: 13.6% !important;
+    width: 100%;
+    height: 100% !important;
+    margin-bottom: 0 !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        height: 92.4% !important;
+        margin-bottom: 0 !important;
+        position: fixed !important;
+        left: 0 !important;
+        top: 7.6% !important;
+        width: 60%;
+        background-color: #EBF0F7 !important;
+        overflow: auto;
+        z-index: 99;
+    }
+}
+
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+@media only screen and (min-width: 601px) {
+    .menu {
+        height: 92.4% !important;
+        margin-bottom: 0 !important;
+        position: fixed !important;
+        left: 0 !important;
+        top: 7.6% !important;
+        width: 31.5%;
+        background-color: #EBF0F7 !important;
+        overflow: auto;
+        z-index: 99;
+    }
+}
+
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+.item {
+    height: 10% !important;
+}
+
+.collapsible {
+    margin: 0 !important;
+}
+
+
+/*MENU*/
+
+
+/*MENU*/
+
+@media only screen and (max-width: 600px) {
+    .menu2 {
+        height: 92.4% !important;
+        margin-bottom: 0 !important;
+        position: fixed !important;
+        right: 0 !important;
+        top: 7.6% !important;
+        width: 100%;
+        background-color: #4F0F60 !important;
+        overflow: auto;
+        z-index: 99;
+    }
+}
+
+a{
+    color: #4F0F60 !important;
+}
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+@media only screen and (min-width: 601px) {
+    .menu2 {
+        height: 92.4% !important;
+        margin-bottom: 0 !important;
+        position: fixed !important;
+        right: 0 !important;
+        top: 7.6% !important;
+        width: 31.5%;
+        background-color: #4F0F60 !important;
+        overflow: auto;
+        z-index: 99;
+    }
+}
+
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+.item {
+    height: 10% !important;
+}
+
+.collapsible {
+    margin: 0 !important;
+}
+
+
+/*MENU*/
+
+.fundo {
+    width: 100% !important;
+}
+
+
+/*MAIN*/
+
+.main {
+    height: 92.4% !important;
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    overflow-y: scroll;
+}
+
+.input-field input:focus+label {
+    color: black !important;
+}
+
+.row .input-field input:focus {
+    border-bottom: 1px solid black !important;
+    box-shadow: 0 1px 0 0 black !important
+}
+
+.botao {
+    margin-bottom: 3% !important;
+}
+
+.btn {
+    background-color: #3F8EE3 !important;
+}
+
+.btnsend {
+    background-color: #3F8EE3 !important;
+    padding: 0px !important;
+}
+
+.quickLook {
+    height: 12.7% !important;
+    background-color: #fff;
+    margin-bottom: 0% !important;
+    overflow: auto !important;
+}
+
+
+/*MAIN*/
+
+
+/* showroom */
+
+.showroom {
+    height: 76.9% !important;
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    overflow-y: auto;
+}
+
+.cardShowRoom {
+    height: 100% !important;
+    margin: 0% !important;
+    border-left: 5px solid #5596E6;
+}
+
+.cardHolder {
+    margin-top: 1% !important;
+    height: 23% !important;
+}
+
+.cardLine {
+    height: 23.3% !important;
+    margin: 0% !important;
+}
+
+.cardLineLast {
+    margin-top: 0.5% !important;
+    height: 21% !important;
+}
+
+.cardLineBeforeLast {
+    height: 23.3% !important;
+    border-bottom: 1px solid #bbb;
+}
+
+.cardLineFirst {
+    height: 30% !important;
+    margin: 0% !important;
+}
+
+.cardTable {
+    height: 95% !important;
+    overflow: none !important;
+    margin-bottom: 0% !important;
+}
+
+.dateDelete {
+    border-radius: 500px;
+    margin: 0% !important;
+}
+
+.textLastLine {
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+}
+
+.delete:hover {
+    color: #e71d32 !important;
+}
+
+.chatIcon {
+    font-size: 2.5rem !important;
+    color: #4F0F60;
+    cursor: pointer;
+}
+
+.chatIconText {
+    color: #000 !important;
+}
+
+.color-anim {
+    color: #3F8EE3;
+}
+
+
+/* showroom */
+
+
+/* hamburguer */
+
+.animated-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+    display: inline-block;
+}
+
+.animated-icon .ani {
+    top: 18.5px;
+    left: 5px;
+    margin-left: 10px;
+    background-color: #4F0F60 !important;
+}
+
+.animated-icon .ani,
+.animated-icon .ani:before,
+.animated-icon .ani:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 28px;
+    background: rgb(33, 33, 33);
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.animated-icon .ani:before,
+.animated-icon .ani:after {
+    background: inherit;
+}
+
+.animated-icon.menu-arrow-r.anim {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.animated-icon.menu-arrow-r .ani:before {
+    top: -8px;
+    left: 0;
+}
+
+.animated-icon.menu-arrow-r .ani:after {
+    top: 8px;
+    left: 0;
+}
+
+.animated-icon.menu-arrow-r.anim .ani:before {
+    top: -5.5px;
+    width: 18px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    left: -3px;
+}
+
+.animated-icon.menu-arrow-r.anim .ani:after {
+    top: 5.5px;
+    width: 18px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: -3px;
+}
+
+.animated-icon.menu-arrow-l.anim {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.animated-icon.menu-arrow-l .ani:before {
+    top: -8px;
+    right: 0;
+}
+
+.animated-icon.menu-arrow-l .ani:after {
+    top: 8px;
+    right: 0;
+}
+
+.animated-icon.menu-arrow-l.anim .ani {
+    width: 27px;
+}
+
+.animated-icon.menu-arrow-l.anim .ani:before {
+    top: -5.5px;
+    width: 18px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: -4px;
+}
+
+.animated-icon.menu-arrow-l.anim .ani:after {
+    top: 5.5px;
+    width: 18px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: -4px;
+}
+
+.animated-icon.menu-cross .ani:before {
+    top: -8px;
+    right: 0;
+}
+
+.animated-icon.menu-cross .ani:after {
+    top: 8px;
+    right: 0;
+}
+
+.animated-icon.menu-cross.anim .ani {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.animated-icon.menu-cross.anim .ani:before {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.animated-icon.menu-cross.anim .ani:after {
+    top: 0;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.animated-icon.menu-cross-s .ani:before {
+    top: -8px;
+    left: 0;
+}
+
+.animated-icon.menu-cross-s .ani:after {
+    top: 8px;
+    left: 0;
+}
+
+.animated-icon.menu-cross-s.anim .ani {
+    width: 0;
+}
+
+.animated-icon.menu-cross-s.anim .ani:before {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.animated-icon.menu-cross-s.anim .ani:after {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+/* hamburguer */
+
+
+/* CHAT */
+
+.chatFooter {
+    height: 5% !important;
+    margin-bottom: 2% !important;
+    margin-top: 2% !important;
+    width: 94% !important;
+    margin-left: 3% !important;
+    margin-right: 3% !important;
+}
+
+input,
+select,
+textarea {
+    color: #ffffff !important;
+}
+
+.chatHeader {
+    width: 100% !important;
+    height: 11% !important;
+    background-color: #4F0F60 !important;
+    margin: 0 !important;
+    color: #fff;
+}
+
+.chatholder {
+    width: 100% !important;
+    height: 80% !important;
+    overflow-y: auto !important;
+    overflow-x: none !important;
+    margin-top: 0% !important;
+    background-color: #F2F2F2 !important
+}
+
+.balao {
+    margin: 0.5em 0 0 0 !important;
+    border-radius: 1em !important;
+    padding: 0.5em 1em;
+    background: #e5e5ea;
+    max-width: 75% !important;
+    clear: both;
+    position: relative;
+    font-size: 1rem !important;
+    word-break: normal;
+}
+
+.balao.them {
+    float: left;
+}
+
+.balao.me {
+    float: right;
+    background-color: #4F0F60;
+    color: white;
+}
+
+
+/* CHAT */
