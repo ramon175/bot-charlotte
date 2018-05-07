@@ -5,13 +5,15 @@
 } */
 
 html,
-body {
+body,
+.login-box {
     height: 100%;
 }
 
 body {
     background-color: #F5F7FA !important;
     overflow-x: hidden;
+    background-image: url(../images/bg.jpg);
 }
 
 .margin0 {
@@ -247,9 +249,9 @@ a{
 
 /*MENU*/
 
-.fundo {
+/* .fundo {
     width: 100% !important;
-}
+} */
 
 
 /*MAIN*/
@@ -551,13 +553,10 @@ a{
     width: 94% !important;
     margin-left: 3% !important;
     margin-right: 3% !important;
-}
-
-input,
-select,
-textarea {
     color: #ffffff !important;
 }
+
+
 
 .chatHeader {
     width: 100% !important;
@@ -600,3 +599,4 @@ textarea {
 
 
 /* CHAT */
+

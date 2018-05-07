@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Unimed</title>
+    <title>Charlotte</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,7 @@
     <script src="scripts/jquery-3.2.1.js"></script>
     <script src="scripts/util.js"></script>
     <script src="scripts/animations.js"></script>
+    <script src="scripts/login.js"></script>
     <script src="scripts/chat.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -27,25 +28,27 @@
     <!-- NAV -->
     <div class="row nav2 valign-wrapper">
 
-        <div class="row col s3 m1 l1 colnav2 valign-wrapper burguerHolder">
+        <div class="row col s3 m2 l1 colnav2 valign-wrapper burguerHolder">
 
-            <div class="animated-icon menu-cross">
+            <div class="animated-icon menu-cross hide" id="sideMenu">
                 <div class="ani"></div>
             </div>
 
         </div>
 
-        <div class="row col s9 m11 l11 colnav2 valign-wrapper">
-
-            <div class=" col s6 m4 l2 center " style="height: 100%">
-                <img class="logo" src="images/download.png" height="100%">
-            </div>
-            <div class="col s3 offset-s3 m2 offset-m6 l1 offset-l9 center-align flex">
-                <p class="chatIconText hide-on-small-only">Chat</p>
-                <i id="sign-in" class="material-icons chatIcon scale-transition">chat</i>
-            </div>
-
+        <div class=" col s6 m8 l10 center" style="height: 100%">
+            <!-- <p>Charlotte</p>  -->
         </div>
+        <div class="col s3 m2 l1 center-align flex hide" id="chatIconDiv">
+            <p class="chatIconText hide-on-small-only">Chat</p>
+            <i id="sign-in" class="material-icons chatIcon scale-transition">chat</i>
+        </div>
+
+        <!-- <div class="row col s9 m11 l11 colnav2 valign-wrapper">
+
+            
+
+        </div> -->
 
     </div>
 
@@ -56,9 +59,15 @@
 
         <ul class="collapsible" data-collapsible="accordion">
             <li class="viewCreate">
-                <a href="https://www.unimedcuritiba.com.br/wps/portal/internet">
+                <a href="/">
                     <div class="collapsible-header">
                         <i class="material-icons"></i>Home</div>
+                </a>
+            </li>
+            <li class="viewCreate">
+                <a href="/uploadQuestions">
+                    <div class="collapsible-header">
+                        <i class="material-icons"></i>Upload de Questões</div>
                 </a>
             </li>
         </ul>
@@ -67,9 +76,36 @@
 
     <!-- MAIN -->
 
-    <!-- MAIN CRIAR ICP -->
+    <!-- MAIN BODY -->
     <div id="main-row" class="main row">
-        <img src="./images/Picture1.png" usemap="#image-map" class="fundo">
+        <!-- LOGIN DIV -->
+            <div class="valign-wrapper row login-box" id="loginModal">
+                    <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
+                      <form id="loginForm" method="POST">
+                        <div class="card-content">
+                          <span class="card-title">Login</span>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <label for="ra">RA:</label>
+                              <input type="number" class="validate" name="ra" id="ra" required/>
+                            </div>
+                            <div class="input-field col s12">
+                              <label for="password">Senha: </label>
+                              <input type="password" class="validate" name="password" id="password" required/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-action center-align">
+                          <input type="submit" id="loginBtn" class="btn purple waves-effect waves-light" value="Login">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <!--   -->
+
+                <!-- ERROR DIALOG -->
+                  
+                <!--  -->
     </div>
     <div class="overlay displaynone"></div>
 
@@ -78,7 +114,7 @@
     <!--MENU BOT-->
     <div class="row menu2 displaynone">
         <div class="row chatHeader valign-wrapper col s12 m12 l12">
-            <h5>Dúvidas? Fale comigo!</h5>
+            <h5>Fale comigo!</h5>
         </div>
         <div class="col s12 m12 l12 chatholder">
             <!-- <p class="balao them">

@@ -1,10 +1,10 @@
 var xmlhttp = new XMLHttpRequest();
-let ENDPOINT = "/unimed/api/v1";
+let ENDPOINT = "/chat";
 let ASSISTANT_API = "/assistant"
 
 $(document).ready(function () {
     console.log("chat.js loaded");
-    sendMessage({"input": "Oi"})
+    sendMessage({"input": ""})
     //pegar input do usuario no chat
     $(".chatFooter").keypress(function (event) {
         if (event.keyCode == 13) {
@@ -46,11 +46,3 @@ function sendMessage(obj){
     })
 }
 
-
-//<p class="balao me">
-//S'Okay, Maude. You know your lines...?
-//</p>
-//
-//<p class="balao them">
-//I know em, I don't know what order they come in...
-//</p>

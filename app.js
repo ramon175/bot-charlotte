@@ -28,11 +28,13 @@ app.use(cors());
 // Routers
     var indexRouter = require('./routes/index.router')();
     var conversationRouter = require('./routes/conversation.router')();
+    var userRouter = require('./routes/user.router')();
 //
 
 
 app.use('/', indexRouter);
-app.use('/unimed/api/v1', conversationRouter);
+app.use('/chat', conversationRouter);
+app.use('/user', userRouter)
 
 /* LISTENER */
 http.listen(app.get('port'), () => {
