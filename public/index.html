@@ -21,6 +21,11 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+     <!-- dropify -->
+     <link rel="stylesheet" href="/nodeStyle/dropify/dist/css/dropify.css" >
+     <script src="/nodeStyle/dropify/dist/js/dropify.js"></script>
+     <!--  -->
+
 
 </head>
 
@@ -65,10 +70,13 @@
                 </a>
             </li>
             <li class="viewCreate">
-                <a href="/uploadQuestions">
+                
                     <div class="collapsible-header">
-                        <i class="material-icons"></i>Upload de Questões</div>
-                </a>
+                        <i class="material-icons"></i>Upload de Questões
+                    </div>
+                    <div class="collapsible-body">
+                        <input type="file" class="dropify" data-height:"200" data-allowed-file-extensions="csv xlsx xls">
+                    </div>
             </li>
         </ul>
     </div>
@@ -133,33 +141,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ISSO É UM CARD -->
-<!-- <div class="col s4 cardHolder ">
-            <div class="card cardShowRoom valign-wrapper ">        
-                <div class="row cardTable ">
-                    <h5 class="col s12 cardLineFirst valign-wrapper"><b>HOSTNAME:&#160;</b> Teste123456</h5>
-                    <div class="col s12 cardLine valign-wrapper"><a href="#" target="_blank"><b>IP:&#160;</b> 172.24.10.40</a></div>
-                    <div class="col s12 cardLineBeforeLast valign-wrapper"><p><b>Status:&#160;</b> Installing ICP</p></div>
-                    <div class="col s4 cardLineLast valign-wrapper"><p class="textLastLine"><b>C:&#160;</b> 05/11</p></div>
-                    <div class="col s4 cardLineLast valign-wrapper"><p class="greenCarbon dateDelete textLastLine"><b>&#160;&#160;DP:&#160;</b>05/12&#160;&#160;</p></div>
-                    <div class="col s4 cardLineLast valign-wrapper">&#160;&#160;&#160;<i class="material-icons">delete_forever</i></div>
-                </div>
-            </div>
-        </div> -->
-<!-- ISSO É UM CARD -->

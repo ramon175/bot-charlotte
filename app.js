@@ -20,6 +20,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/nodeStyle', express.static(path.join(__dirname , '/node_modules')));
 app.use('/style', express.static(path.join(__dirname, '/views/style')));
 app.use(cors());
 /*                     */

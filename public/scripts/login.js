@@ -1,6 +1,22 @@
-var xmlhttp = new XMLHttpRequest();
-
 $(document).ready(() =>{
+
+    $('#ra').val('20723496');
+    $('#password').val('12345');
+
+    $('.dropify').dropify({
+        messages: {
+        'default': 'Arraste um arquivo aqui ou clique',
+        'replace': 'Arraste um arquivo ou clique para substituir',
+        'remove':  'Remover',
+        'error':   'Algo de errado aconteceu!'
+    },
+        error:{
+            'fileExtension':'Este formato de arquivo não é permitido ({{ value }} somente)'
+        }
+    
+});
+
+
     console.log("login.js loaded");
     
     $('#loginForm').submit((event) =>{
