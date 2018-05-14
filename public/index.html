@@ -75,7 +75,15 @@
                         <i class="material-icons"></i>Upload de Questões
                     </div>
                     <div class="collapsible-body">
-                        <input type="file" class="dropify" data-height:"200" data-allowed-file-extensions="csv xlsx xls">
+
+                        <form id="sendQuestionsForm">
+                        <input id="sendQuestionsInput" type="file" class="dropify" name="file"  data-allowed-file-extensions="csv">
+
+                        <button class="btn waves-effect waves-light purple hide " type="submit" id="submitFile">Enviar
+                            <i class="material-icons right">send</i>
+                        </button>
+                                
+                        </form>
                     </div>
             </li>
         </ul>

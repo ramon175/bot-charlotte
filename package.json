@@ -30,6 +30,8 @@
     "log.pets": "0.0.23",
     "nodemon": "^1.17.3",
     "watson-developer-cloud": "^3.0.3",
-    "yargs": "^10.0.3"
+    "yargs": "^10.0.3",
+    "csv-parse": "latest",
+    "multer": "latest"
   }
 }

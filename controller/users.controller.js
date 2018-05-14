@@ -1,12 +1,25 @@
+    // set database
     let database = require('../config/db.config')("users");
 
+    // list all method
+    const list = () => {
+        return new Promise((resolve, reject) => {
+            database.list({
+                include_docs: true
+            }, (err, result) => {
+                if (err) reject(err);
+                resolve(result);
+            })
+        })
+    }
+    // 
+
+    // authenticate method
     const authenticate = (credentials) =>{
         return new Promise((resolve,reject)=>{
 
             var login = (credentials.login) ? credentials.login : null;
             var password = (credentials.password) ? credentials.password : null;
-
-            console.log(`creds: ${login}, ${password}`);
 
             if(login != null && password != null){
                 database.find({
@@ -46,10 +59,7 @@
 
         });
     }
+    // 
 
-    // authenticate({login:"20723496",password:"12345"}).then((result)=>{
-    //     console.log(JSON.stringify(result));
-    // }).catch((err)=>{
-    //     console.log(err);
-    // });
     exports.authenticate = authenticate;
+    exports.list = list;

@@ -5,6 +5,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const pet = require('log.pets');
 
+
 /*                      */
 
 /* App Initialization */
@@ -30,12 +31,14 @@ app.use(cors());
     var indexRouter = require('./routes/index.router')();
     var conversationRouter = require('./routes/conversation.router')();
     var userRouter = require('./routes/user.router')();
+    var questionsRouter = require('./routes/questions.router')();
 //
 
 
 app.use('/', indexRouter);
 app.use('/chat', conversationRouter);
-app.use('/user', userRouter)
+app.use('/user', userRouter);
+app.use('/questions',questionsRouter)
 
 /* LISTENER */
 http.listen(app.get('port'), () => {

@@ -8,9 +8,6 @@ module.exports = (db) => {
     var cloudant = Cloudant({account:username, password:password});
 
     var database = cloudant.db.use(db);
-
-    console.log("Cloudant instanciando!");
     
-
     return database;
 }
