@@ -40,7 +40,11 @@ const bulk = (questionsFile) => {
                     if(err) reject({err:true,msg:err});
                     resolve({err:false, result});
 
+                    setTimeout(() =>{
+
                     fs.unlinkSync('./tmp/' + questionsFile);
+
+                    },3000);
                 })
 
             });

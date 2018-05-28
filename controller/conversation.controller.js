@@ -24,6 +24,7 @@ var sendMessage = (input, context) => {
                     reject(err);
                 } else {
                     context = res.context;
+                    console.log(context);
                     resolve(res);
                 }
             });

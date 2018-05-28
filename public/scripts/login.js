@@ -71,9 +71,13 @@ $(document).ready(() => {
             contentType: false
         }, (result, err) => {
 
-            if (err) console.log(err);
+            if (err) {
+                console.log(err);
+                Materialize.toast(result.msg, 4000)
+            }
 
             console.log(result);
+            Materialize.toast("Upload concluído com sucesso!", 4000)
             // console.log(err);
 
         });
