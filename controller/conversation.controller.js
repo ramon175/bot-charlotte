@@ -11,7 +11,6 @@ var assistant = new AssistantV1({
 
 var sendMessage = (input, context) => {
     return new Promise((resolve, reject) => {
-        var context = (context != null) ? context : {};
         if (input != null) {
             assistant.message({
                 workspace_id: process.env.workspace_id,
@@ -24,7 +23,7 @@ var sendMessage = (input, context) => {
                     reject(err);
                 } else {
                     context = res.context;
-                    console.log(context);
+                    // console.log(context);
                     resolve(res);
                 }
             });

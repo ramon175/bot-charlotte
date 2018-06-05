@@ -32,13 +32,15 @@ app.use(cors());
     var conversationRouter = require('./routes/conversation.router')();
     var userRouter = require('./routes/user.router')();
     var questionsRouter = require('./routes/questions.router')();
+    var testsRouter = require('./routes/tests.router')();
 //
 
 
 app.use('/', indexRouter);
 app.use('/chat', conversationRouter);
 app.use('/user', userRouter);
-app.use('/questions',questionsRouter)
+app.use('/questions',questionsRouter);
+app.use('/tests',testsRouter);
 
 /* LISTENER */
 http.listen(app.get('port'), () => {

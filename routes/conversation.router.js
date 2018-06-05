@@ -12,8 +12,7 @@ var router = () => {
 
 var send = (req, res) => {
     var input = (req.body.input != undefined) ? req.body.input : null;
-    var context = (req.body.context != undefined) ? req.body.context : null;
-
+    var context = (req.body.context != undefined) ? req.body.context : {};
     conversationCrl.sendMessage(input, context)
         .then((response) => {
                 res.send(response);

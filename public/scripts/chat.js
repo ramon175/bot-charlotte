@@ -2,6 +2,8 @@ var xmlhttp = new XMLHttpRequest();
 let ENDPOINT = "/chat";
 let ASSISTANT_API = "/assistant"
 
+var context = {};
+
 $(document).ready(function () {
     console.log("chat.js loaded");
     sendMessage({"input": ""})
@@ -17,7 +19,8 @@ $(document).ready(function () {
                 }, 2000);
 
                 var obj = {
-                    "input": input_value
+                    "input": input_value,
+                    "context":context
                 }
 
                 sendMessage(obj)                
@@ -31,8 +34,25 @@ $(document).ready(function () {
 function sendMessage(obj){
     xhrPost(ENDPOINT + ASSISTANT_API, obj, function (result) {
         console.log(result);
-        
         result = JSON.parse(result)
+
+
+        context = result.context;
+
+        if(context.gerar){
+            
+
+            var dlAnchorElem = document.createElement("a");
+            document.body.appendChild(dlAnchorElem);
+            dlAnchorElem.style = "display: none";
+                dlAnchorElem.setAttribute("href", '/tests/getTests');
+                dlAnchorElem.setAttribute("download", "Provas.zip");
+                dlAnchorElem.click();
+                document.body.removeChild(dlAnchorElem);
+
+            context.gerar = false;
+        }
+
         let output = result['output']['text'][0];
         $(".chatholder").append('<p class="balao them">' + output + '</p>');
         $(".chatholder").stop().animate({
